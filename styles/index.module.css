@@ -1,0 +1,40 @@
+/* principal containers styles  */
+.presentation{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.technoligies{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* secondary containers styles */
+.image{
+    /* background-color: red; */
+    width: 30%;   
+}
+.message{
+    /* background-color: blueviolet; */
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message h1{
+    font-family: 'Oswald';
+    font-size: 11vh;
+}
+.message h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 ;
+}
+/* image styles */
+.profilePict{
+    border-radius: 50%;
+}
