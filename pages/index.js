@@ -18,18 +18,21 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.presentation}>
-          <div className={styles.image}>
-            <Image
-              className={styles.profilePict}
-              src={profilePict} 
-              alt= "Picture of the author"
-              width={300}
-              />
+          <div className={styles.subcontainer1}>
+            <div className={styles.image}>
+              <Image
+                className={styles.profilePict}
+                src={profilePict} 
+                alt= "Picture of the author"
+                width={300}
+                />
+            </div>
+            <div className={styles.message}>
+              <h1>Corbalan Augusto N.</h1>
+              <h3>__ Full Stack Developer __</h3>
+            </div>
           </div>
-          <div className={styles.message}>
-            <h1>Corbalan Augusto N.</h1>
-            <h3>Full Stack Developer</h3>
-          </div>
+          
         </div>
         <div className={styles.technoligies}>
           <h1>Estas son mis tecnologias</h1>
