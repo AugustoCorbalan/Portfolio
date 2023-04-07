@@ -2,18 +2,41 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import profilePict from '../public/images/profile_picture.png';
-import reactLogo from '../public/images/Logotipos/React.png';
+import reactLogo from '../public/images/Logotipos/react.png';
+import reactColorLogo from '../public/images/Logotipos/reactColor.png';
 import jsLogo from '../public/images/Logotipos/js.png';
-import cssLogo from '../public/images/Logotipos/CSS.png';
+import jsColorLogo from '../public/images/Logotipos/jsColor.png';
+import cssLogo from '../public/images/Logotipos/css.png';
+import cssColorLogo from '../public/images/Logotipos/cssColor.png';
 import html5Logo from '../public/images/Logotipos/html5.png';
-import postgreSqlLogo from '../public/images/Logotipos/PostgreSQL.png';
-import nodeJsLogo from '../public/images/Logotipos/NodeJs.png';
+import html5ColorLogo from '../public/images/Logotipos/html5Color.png';
+import postgreSqlLogo from '../public/images/Logotipos/postgreSql.png';
+import postgreSqlColorLogo from '../public/images/Logotipos/postgreSqlColor.png';
+import nodeJsLogo from '../public/images/Logotipos/nodeJs.png';
+import nodeJsColorLogo from '../public/images/Logotipos/nodeJsColor.png';
+import flecha from '../public/iconos/flecha_abajo.png';
+import { useState } from 'react';
 import styles from '../styles/index.module.css';
 import ParticlesBackground from './particles/particlesBackground';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  
+  const [visible, setVisible] = useState(false);
+  const [over, setOver] = useState({
+    overJs: false,
+    overReact: false,
+    overCss: false,
+    overHtml: false,
+    overPostgreSql: false,
+    overNodeJs: false
+  })
+
+  const handleVisibility=()=>{
+    setVisible(!visible)
+  }
+
   return (
     <>
       <Head>
@@ -58,8 +81,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <div className={ visible ? styles.noVisible : styles.desplegator} onClick={()=>handleVisibility()}>
+              <Image
+                src={flecha}
+                alt= "flecha hacia abajo"
+                width={45}
+              />
+            </div>
             <div>
-              <div className={styles.myDescription2}>
+              <div className={visible ? styles.myDescription2Visible : styles.noVisible }>
                 <p className={styles.text_p}>
                   <br/>- ¿Cómo llegué a Full Stack Developer?<br/>
 
@@ -77,6 +107,14 @@ export default function Home() {
                   de razonamiento lógico, algoritmia, y conocimiento de nuevas tecnologías. 
                   Buscando de esta forma poder lograr soluciones cada vez mejores y más eficientes a los problemas que se presentan. 
                 </p>
+                <div className={ visible ? styles.desplegator: styles.noVisible } onClick={()=>handleVisibility()}>
+                    <Image
+                      src={flecha}
+                      alt= "flecha hacia arriba"
+                      width={45}
+                      className={styles.iconFlechaArriba}
+                    />
+                </div>
               </div>
             </div>
           </div>
@@ -86,44 +124,58 @@ export default function Home() {
             <div className={styles.logotypes}>
               <Image
                 className={styles.JavaScript}
-                src={jsLogo}
+                src={over.overJs? jsColorLogo : jsLogo}
                 alt='JS Logo'
                 width={120}
+                onMouseOver={()=>setOver({...over, overJs: true})}
+                onMouseOut={()=>setOver({...over, overJs: false})}
               />
               <Image
                 className={styles.React}
-                src={reactLogo}
+                src={over.overReact? reactColorLogo : reactLogo}
                 alt='React Logo'
                 width={150}
+                onMouseOver={()=>setOver({...over, overReact: true})}
+                onMouseOut={()=>setOver({...over, overReact: false})}
               />
               <Image
                 className={styles.Css}
-                src={cssLogo}
+                src={over.overCss? cssColorLogo : cssLogo}
                 alt='Css Logo'
                 width={120}
+                onMouseOver={()=>setOver({...over, overCss: true})}
+                onMouseOut={()=>setOver({...over, overCss: false})}
               />
               <Image
                 className={styles.html5}
-                src={html5Logo}
+                src={over.overHtml? html5ColorLogo : html5Logo}
                 alt='Html5 Logo'
                 width={120}
+                onMouseOver={()=>setOver({...over, overHtml: true})}
+                onMouseOut={()=>setOver({...over, overHtml: false})}
               />
               <Image
-              className={styles.postgreSql}
-              src={postgreSqlLogo}
-              alt='postgreSql Logo'
-              width={120}
+                className={styles.postgreSql}
+                src={over.overPostgreSql? postgreSqlColorLogo : postgreSqlLogo}
+                alt='postgreSql Logo'
+                width={120}
+                onMouseOver={()=>setOver({...over, overPostgreSql: true})}
+                onMouseOut={()=>setOver({...over, overPostgreSql: false})}
               />
               <Image
-              className={styles.nodeJs}
-              src={nodeJsLogo}
-              alt='nodeJs Logo'
-              width={120}
+                className={styles.nodeJs}
+                src={over.overNodeJs? nodeJsColorLogo : nodeJsLogo}
+                alt='nodeJs Logo'
+                width={120}
+                onMouseOver={()=>setOver({...over, overNodeJs: true})}
+                onMouseOut={()=>setOver({...over, overNodeJs: false})}
               />
             </div>
           </div>
           <div className={styles.linea}/>
-        
+          <div className={styles.subcontainer4}>
+            <h3 className={styles.text_h3}>Mis proyectos</h3>
+          </div>
         <h1></h1>
        
       </main>
