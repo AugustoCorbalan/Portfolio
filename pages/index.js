@@ -2,7 +2,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import profilePict from '../public/images/profile_picture.png';
+import reactLogo from '../public/images/Logotipos/React.png';
+import jsLogo from '../public/images/Logotipos/js.png';
+import cssLogo from '../public/images/Logotipos/CSS.png';
+import html5Logo from '../public/images/Logotipos/html5.png';
+import postgreSqlLogo from '../public/images/Logotipos/PostgreSQL.png';
+import nodeJsLogo from '../public/images/Logotipos/NodeJs.png';
 import styles from '../styles/index.module.css';
+import ParticlesBackground from './particles/particlesBackground';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,26 +24,106 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"/>
       </Head>
       <main className={styles.main}>
-        <div className={styles.presentation}>
+        <div className={styles.container1}>
           <div className={styles.subcontainer1}>
-            <div className={styles.image}>
-              <Image
-                className={styles.profilePict}
-                src={profilePict} 
-                alt= "Picture of the author"
-                width={300}
-                />
-            </div>
-            <div className={styles.message}>
-              <h1>Corbalan Augusto N.</h1>
-              <h3>__ Full Stack Developer __</h3>
+            <ParticlesBackground className={styles.particles}/>
+            <div className={styles.presentation}>
+              <div className={styles.message}>
+                <h1 className={styles.text_h1}>Corbalan Augusto N.</h1>
+                <h3 className={styles.text_h3}>___ Full Stack Developer ___</h3>
+              </div>
             </div>
           </div>
-          
         </div>
-        <div className={styles.technoligies}>
-          <h1>Estas son mis tecnologias</h1>
-        </div>
+        <div className={styles.linea}/>
+        <div className={styles.subcontainer3}>
+            <h3 className={styles.text_h4}>¿ Quien soy ?</h3>
+            <div className={styles.subcontainer3_1}>
+              <div className={styles.myPhoto}>
+                <Image
+                  className={styles.profilePict}
+                  src={profilePict} 
+                  alt= "Picture of the author"
+                  width={200}
+                />
+              </div>
+              <div className={styles.myDescription1}>
+                <p className={styles.text_p}>
+                  Hola, mi nombre es Augusto Corbalán, soy de Alta Gracia - Córdoba, Argentina.<br/>
+
+                  <br/>Soy Full Stack web Developer, cuento con 800 horas de programación realizadas en el bootcamp 
+                  "Soy Henry" tanto en tareas y proyectos individuales como grupales. Estando capacitado para trabajar 
+                  con las tecnologías de JavaScript, React.js, Redux.js, Node.js, PostgreSQL, Sequelize.js, HTML, CSS, entre otras. 
+                  Tanto de forma individual como en equipo con la tecnología GIT.<br/>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className={styles.myDescription2}>
+                <p className={styles.text_p}>
+                  <br/>- ¿Cómo llegué a Full Stack Developer?<br/>
+
+                  <br/>Inicié mi carrera como Desarrollador luego de descubrir en la carrera de Ingeniería la importancia de la programación 
+                  para la resolución de los problemas y búsqueda de las soluciones más eficientes para los problemas de la actualidad.<br/>
+
+                  Desde chico tuve un gran interés y habilidad para la resolución de problemas relacionados con tecnología, es por ello 
+                  que siempre dediqué mi tiempo y esfuerzo a buscar las herramientas que me permitan encontrar las soluciones más eficientes a estos.<br/>
+
+                  <br/>- ¿Por qué desarrollo WEB?<br/>
+
+                  <br/>Decidí comenzar en desarrollo web ya que considero que es la mejor forma de iniciar en el mundo de la programación y desarrollo de soluciones 
+                  por medio de software. 
+                  Actualmente sigo estudiando y capacitándome para profundizar cada vez más mis conocimientos en el desarrollo de software web, mejorar mi capacidad 
+                  de razonamiento lógico, algoritmia, y conocimiento de nuevas tecnologías. 
+                  Buscando de esta forma poder lograr soluciones cada vez mejores y más eficientes a los problemas que se presentan. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.linea}/>
+          <div className={styles.subcontainer2}>
+            <h3 className={styles.text_h3}>Tecnologías</h3>
+            <div className={styles.logotypes}>
+              <Image
+                className={styles.JavaScript}
+                src={jsLogo}
+                alt='JS Logo'
+                width={120}
+              />
+              <Image
+                className={styles.React}
+                src={reactLogo}
+                alt='React Logo'
+                width={150}
+              />
+              <Image
+                className={styles.Css}
+                src={cssLogo}
+                alt='Css Logo'
+                width={120}
+              />
+              <Image
+                className={styles.html5}
+                src={html5Logo}
+                alt='Html5 Logo'
+                width={120}
+              />
+              <Image
+              className={styles.postgreSql}
+              src={postgreSqlLogo}
+              alt='postgreSql Logo'
+              width={120}
+              />
+              <Image
+              className={styles.nodeJs}
+              src={nodeJsLogo}
+              alt='nodeJs Logo'
+              width={120}
+              />
+            </div>
+          </div>
+          <div className={styles.linea}/>
+        
         <h1></h1>
        
       </main>
