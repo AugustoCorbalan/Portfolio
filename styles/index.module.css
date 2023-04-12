@@ -118,10 +118,20 @@
     font-weight: 200 ;
     font-size: 6vh;
 }
+.text_h4min{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 ;
+    font-size: 3vh;
+}
 .text_p{
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 3.5vh;
+}
+.text_pmin{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 ;
+    font-size: 2.7vh;
 }
 .noVisible{
     display: none;
@@ -138,4 +148,52 @@
 
 .iconFlechaArriba{
     transform: rotate(180deg);
+}
+
+.containerProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #7a7a7a;
+    border-radius: 5px;
+    width: 388px;
+    height: 259px;
+    background-image: url(../public/images/backgroundRecipes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.project{
+    background-color: #31313100;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.nameProject{
+    margin-top: 85px;
+    margin-left: 145px;
+}
+.nameProject p{
+    text-indent: 80px;
+}
+.descriptionProject{
+    display: none;
+    transform: translateY(-100%)
+}
+.project:hover .descriptionProject{
+    background-color: #212121a7;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: translateY(0%);
+}
+.project:hover .descriptionProject p{
+    display: block;
+}
+.project:hover .nameProject{
+    display: none;
 }

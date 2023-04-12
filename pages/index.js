@@ -18,6 +18,7 @@ import flecha from '../public/iconos/flecha_abajo.png';
 import { useState } from 'react';
 import styles from '../styles/index.module.css';
 import ParticlesBackground from './particles/particlesBackground';
+import backgroundRecipe from '../public/images/backgroundRecipes.jpg';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -174,7 +175,30 @@ export default function Home() {
           </div>
           <div className={styles.linea}/>
           <div className={styles.subcontainer4}>
+
             <h3 className={styles.text_h3}>Mis proyectos</h3>
+
+            <div className={styles.containerProject}>
+              <div className={styles.project}>
+                <div className={styles.nameProject}>
+                  <h4 className={styles.text_h4}>PI-FOOD</h4>
+                  <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
+                </div>
+                <div className={styles.descriptionProject}>
+                  <p className={styles.text_p}>Descripción:</p>
+                  <p className={styles.text_pmin}>
+                    "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
+                    junto con información relevante de las mismas utilizando la api externa "spoonacular" 
+                    y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
+                  </p>
+                  <p className={styles.text_p}>Tecnologías:</p>
+                  <p className={styles.text_pmin}>
+                    React | Redux | nodeJs | Sequelize | PostgreSQL
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         <h1></h1>
        
