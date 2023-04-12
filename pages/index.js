@@ -18,7 +18,6 @@ import flecha from '../public/iconos/flecha_abajo.png';
 import { useState } from 'react';
 import styles from '../styles/index.module.css';
 import ParticlesBackground from './particles/particlesBackground';
-import backgroundRecipe from '../public/images/backgroundRecipes.jpg';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -122,7 +121,7 @@ export default function Home() {
           <div className={styles.linea}/>
           <div className={styles.subcontainer2}>
             <h3 className={styles.text_h3}>Tecnologías</h3>
-            <div className={styles.logotypes}>
+            {/* <div className={styles.logotypes}>
               <Image
                 className={styles.JavaScript}
                 src={over.overJs? jsColorLogo : jsLogo}
@@ -171,7 +170,7 @@ export default function Home() {
                 onMouseOver={()=>setOver({...over, overNodeJs: true})}
                 onMouseOut={()=>setOver({...over, overNodeJs: false})}
               />
-            </div>
+            </div> */}
           </div>
           <div className={styles.linea}/>
           <div className={styles.subcontainer4}>
