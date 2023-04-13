@@ -50,9 +50,11 @@
 .subcontainer4_1{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 5vh;
+    /* background-color: red; */
 }
 .myDescription1{
     /* background-color: aqua; */
@@ -216,4 +218,29 @@
 }
 .project:hover .nameProject{
     display: none;
+}
+
+.containerProject{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.projectDetails{
+    height: 239px;
+    width: 50%;
+    margin: 10px;
+    margin-left: 40px;
+    border-left: 2px solid #a4a4a4;
+    padding: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 100%;
+    height: 50%;
 }
