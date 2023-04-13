@@ -114,30 +114,36 @@
 }
 /* Estilos de texto */
 .text_h1{
+    color: #ffffff;
     font-family: 'Oswald';
     font-size: 15vh;
 }
 .text_h3{
+    color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 6.5vh;
 }
 .text_h4{
+    color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 6vh;
 }
 .text_h4min{
+    color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 3vh;
 }
 .text_p{
+    color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 3.5vh;
 }
 .text_pmin{
+    color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 2.7vh;
