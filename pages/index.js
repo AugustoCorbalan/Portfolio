@@ -121,6 +121,54 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.linea}/>
+          <div className={styles.subcontainer4}>
+            <h3 className={styles.text_h3}>Mis proyectos</h3>
+            <div className={styles.subcontainer4_1}>
+              <a href='https://pi-henry-2.vercel.app'>
+                <div className={styles.containerProject1}>
+                  <div className={styles.project}>
+                    <div className={styles.nameProject}>
+                      <h4 className={styles.text_h4}>PI-FOOD</h4>
+                      <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
+                    </div>
+                    <div className={styles.descriptionProject}>
+                      <p className={styles.text_p}>Descripción:</p>
+                      <p className={styles.text_pmin}>
+                        "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
+                        junto con información relevante de las mismas utilizando la api externa "spoonacular" 
+                        y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
+                      </p>
+                      <p className={styles.text_p}>Tecnologías:</p>
+                      <p className={styles.text_pmin}>
+                        React | Redux | nodeJs | Sequelize | PostgreSQL
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href='https://pi-henry-2.vercel.app'>
+                <div className={styles.containerProject2}>
+                  <div className={styles.project}>
+                    <div className={styles.descriptionProject}>
+                      <p className={styles.text_p}>Descripción:</p>
+                      <p className={styles.text_pmin}>
+                        Nace con la idea de crear un espacio amigable en el que los desarrolladores puedan distenderse,
+                        compartir ideas y proyectos propios.
+                        Resolver dudas, buscar compañeros para trabajar en equipo y buscar trabajo.
+                        Todo dentro de un mismo espacio
+                      </p>
+                      <p className={styles.text_p}>Tecnologías:</p>
+                      <p className={styles.text_pmin}>
+                        React | Redux | nodeJs | Sequelize | PostgreSQL | MaterialUI | Auth0
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div className={styles.linea}/>
           <div className={styles.subcontainer2}>
             <h3 className={styles.text_h3}>Tecnologías</h3>
             <div className={styles.logotypes}>
@@ -173,54 +221,6 @@ export default function Home() {
                 onMouseOut={()=>setOver({...over, overNodeJs: false})}
               />
             </div>
-          </div>
-          <div className={styles.linea}/>
-          <div className={styles.subcontainer4}>
-            <h3 className={styles.text_h3}>Mis proyectos</h3>
-            <div className={styles.subcontainer4_1}>
-              <a href='https://pi-henry-2.vercel.app'>
-                <div className={styles.containerProject1}>
-                  <div className={styles.project}>
-                    <div className={styles.nameProject}>
-                      <h4 className={styles.text_h4}>PI-FOOD</h4>
-                      <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
-                    </div>
-                    <div className={styles.descriptionProject}>
-                      <p className={styles.text_p}>Descripción:</p>
-                      <p className={styles.text_pmin}>
-                        "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
-                        junto con información relevante de las mismas utilizando la api externa "spoonacular" 
-                        y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
-                      </p>
-                      <p className={styles.text_p}>Tecnologías:</p>
-                      <p className={styles.text_pmin}>
-                        React | Redux | nodeJs | Sequelize | PostgreSQL
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href='https://pi-henry-2.vercel.app'>
-                <div className={styles.containerProject2}>
-                  <div className={styles.project}>
-                    <div className={styles.descriptionProject}>
-                      <p className={styles.text_p}>Descripción:</p>
-                      <p className={styles.text_pmin}>
-                        Nace con la idea de crear un espacio amigable en el que los desarrolladores puedan distenderse,
-                        compartir ideas y proyectos propios.
-                        Resolver dudas, buscar compañeros para trabajar en equipo y buscar trabajo.
-                        Todo dentro de un mismo espacio
-                      </p>
-                      <p className={styles.text_p}>Tecnologías:</p>
-                      <p className={styles.text_pmin}>
-                        React | Redux | nodeJs | Sequelize | PostgreSQL | MaterialUI | Auth0
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
           </div>
           <div className={styles.linea}/>
        
