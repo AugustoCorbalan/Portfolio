@@ -18,6 +18,7 @@ import flecha from '../public/iconos/flecha_abajo.png';
 import { useState } from 'react';
 import styles from '../styles/index.module.css';
 import ParticlesBackground from './particles/particlesBackground';
+import NavBar from './subComponents/navBar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,6 +48,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"/>
       </Head>
       <main className={styles.main}>
+        <NavBar/>
         <div className={styles.container1}>
           <div className={styles.subcontainer1}>
             <ParticlesBackground className={styles.particles}/>
@@ -174,32 +176,53 @@ export default function Home() {
           </div>
           <div className={styles.linea}/>
           <div className={styles.subcontainer4}>
-
             <h3 className={styles.text_h3}>Mis proyectos</h3>
-
-            <div className={styles.containerProject}>
-              <div className={styles.project}>
-                <div className={styles.nameProject}>
-                  <h4 className={styles.text_h4}>PI-FOOD</h4>
-                  <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
+            <div className={styles.subcontainer4_1}>
+              <a href='https://pi-henry-2.vercel.app'>
+                <div className={styles.containerProject1}>
+                  <div className={styles.project}>
+                    <div className={styles.nameProject}>
+                      <h4 className={styles.text_h4}>PI-FOOD</h4>
+                      <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
+                    </div>
+                    <div className={styles.descriptionProject}>
+                      <p className={styles.text_p}>Descripción:</p>
+                      <p className={styles.text_pmin}>
+                        "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
+                        junto con información relevante de las mismas utilizando la api externa "spoonacular" 
+                        y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
+                      </p>
+                      <p className={styles.text_p}>Tecnologías:</p>
+                      <p className={styles.text_pmin}>
+                        React | Redux | nodeJs | Sequelize | PostgreSQL
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.descriptionProject}>
-                  <p className={styles.text_p}>Descripción:</p>
-                  <p className={styles.text_pmin}>
-                    "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
-                    junto con información relevante de las mismas utilizando la api externa "spoonacular" 
-                    y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
-                  </p>
-                  <p className={styles.text_p}>Tecnologías:</p>
-                  <p className={styles.text_pmin}>
-                    React | Redux | nodeJs | Sequelize | PostgreSQL
-                  </p>
+              </a>
+              <a href='https://pi-henry-2.vercel.app'>
+                <div className={styles.containerProject2}>
+                  <div className={styles.project}>
+                    <div className={styles.descriptionProject}>
+                      <p className={styles.text_p}>Descripción:</p>
+                      <p className={styles.text_pmin}>
+                        Nace con la idea de crear un espacio amigable en el que los desarrolladores puedan distenderse,
+                        compartir ideas y proyectos propios.
+                        Resolver dudas, buscar compañeros para trabajar en equipo y buscar trabajo.
+                        Todo dentro de un mismo espacio
+                      </p>
+                      <p className={styles.text_p}>Tecnologías:</p>
+                      <p className={styles.text_pmin}>
+                        React | Redux | nodeJs | Sequelize | PostgreSQL | MaterialUI | Auth0
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
           </div>
-        <h1></h1>
+          <div className={styles.linea}/>
        
       </main>
     </>
