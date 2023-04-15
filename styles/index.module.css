@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
 }
+.containerOff{
+    display: none;
+}
 .subcontainer1{
     width: 100vw;
     height: 70vh;

@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "../../styles/navBar.module.css";
 
-const NavBar=()=>{
+const NavBar=({visibility})=>{
+
+    const {setVisibles, visibles} = visibility;
+    const handleClick=()=>{
+        setVisibles({...visibles, form: true});
+    }
+
     return(
         <>
             <div className={styles.navBar}>
@@ -14,7 +20,7 @@ const NavBar=()=>{
                 </div>
                 <div className={styles.container3}>
                     <div>
-                        <button className={styles.buttonContact}>
+                        <button className={styles.buttonContact} onClick={handleClick}>
                             <span className={styles.buttonContact_lg}>
                                 <span className={styles.buttonContact_sl}></span>
                                 <span className={styles.buttonContact_text}>_CONTACTAME_</span>

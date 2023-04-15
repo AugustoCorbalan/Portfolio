@@ -1,0 +1,79 @@
+.containerOff{
+    display: none;
+}
+.containerOn{
+    background-color: #363636b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+.subContainer{
+    display: flex;
+    flex-wrap: wrap;;
+    background-color: rgb(9,9,9);
+    border: 1.5px solid #363636b8;
+    border-radius: 10px;
+    width: 45%;
+    height: 60%;
+    padding-top: 20px;
+}
+.subContainer1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.subContainer2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    padding-right: 5%;
+}
+.inputName{
+    margin-left: 5%;
+    margin-right: 2.5%;
+    width: 42.5%;
+    height: 12%;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+}
+.inputEmail{
+    margin-left: 2.5%;
+    margin-right: 5%;
+    width: 42.5%;
+    height: 12%;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+}
+.inputAsunto{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 12%;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+}
+
+.inputMessage{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 55%;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    resize: none;
+}
