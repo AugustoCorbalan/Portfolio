@@ -3,14 +3,15 @@ const  transporter  = require("../controllers/nodemailer");
 
 const router = Router();
 
-router.get("/send", async (req, res)=>{
+router.post("/send", async (req, res)=>{
+    const { name, email, asunto, mensaje } = req.body;
+    const content = `<p>${mensaje}</p></br></br><p> Nombre: ${name},  email: ${email} </p>`
     try {
         await transporter.sendMail({
-            from: '"Fred Foo 👻" <foo@example.com>', // sender address
-            to: "auguscorbi@gmail.com", // list of receivers
-            subject: "Hello ✔", // Subject line
-            text: "Hello world?", // plain text body
-            html: "<b>Hello world?</b>", // html body
+            from: '"Portfolio" <auguscorbi@gmail.com>',
+            to: "auguscorbi@gmail.com",
+            subject: asunto,
+            html: content,
           });
         res.status(200).send("El email se envió correctamente")
         

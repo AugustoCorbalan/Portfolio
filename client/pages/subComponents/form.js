@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/form.module.css";
 import ButtonStyle from "./buttonStyle";
+import axios from "axios";
 import { Content } from "next/font/google";
 
 const Form = ({status, visibility})=>{
@@ -35,9 +36,10 @@ const Form = ({status, visibility})=>{
         }
     }
 
-    const handlerSubmit=(event)=>{
+    const handlerSubmit= async (event)=>{
         event.preventDefault();
-        
+        const response = await axios.post("http://localhost:3001/send", values)
+        console.log(response.data)
     }
     return(
         <>
