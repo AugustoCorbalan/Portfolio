@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/navBar.module.css";
+import styles from "../styles/navBar.module.css";
 
 const NavBar=({visibility})=>{
 

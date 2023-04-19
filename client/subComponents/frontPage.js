@@ -1,6 +1,6 @@
 import React from "react";
-import ParticlesBackground from "../particles/particlesBackground";
-import styles from "../../styles/index.module.css"
+import ParticlesBackground from "./particles/particlesBackground";
+import styles from "../styles/index.module.css"
 
 const FrontPage=()=>{
     return(

@@ -17,11 +17,11 @@ import nodeJsColorLogo from '../public/images/Logotipos/nodeJsColor.png';
 import flecha from '../public/iconos/flecha_abajo.png';
 import { useState } from 'react';
 import styles from '../styles/index.module.css';
-import ParticlesBackground from './particles/particlesBackground';
-import NavBar from './subComponents/navBar';
-import Form from './subComponents/form'
-import FrontPage from './subComponents/frontPage';
-import ButtonStyle from './subComponents/buttonStyle';
+import ParticlesBackground from '../subComponents/particles/particlesBackground';
+import NavBar from '../subComponents/navBar';
+import Form from '../subComponents/form'
+import FrontPage from '../subComponents/frontPage';
+import ButtonStyle from '../subComponents/buttonStyle';
 
 const inter = Inter({ subsets: ['latin'] })
 

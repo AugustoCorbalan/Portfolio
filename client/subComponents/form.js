@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validarName, validarMail, validarAsunto, validarMessage } from "./regularExpresion.js"
-import styles from "../../styles/form.module.css";
-import ButtonStyle from "./buttonStyle";
+import styles from "../styles/form.module.css";
+import ButtonStyle from "./buttonStyle.js";
 import axios from "axios";
 
 const Form = ({status, visibility})=>{
