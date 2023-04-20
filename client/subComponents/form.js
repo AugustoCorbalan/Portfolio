@@ -52,7 +52,7 @@ const Form = ({status, visibility})=>{
 
     const handlerSubmit= async (event)=>{
         event.preventDefault();
-        const response = await axios.post("http://localhost:3001/send", values)
+        const response = await axios.post("portfolio-production-07fa.up.railway.app/send", values)
         console.log(response.data)
     }
     return(
