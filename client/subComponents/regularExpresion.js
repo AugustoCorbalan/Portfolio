@@ -1,14 +1,18 @@
 
 const validarName=(value)=>{
     const contentSymbol = /^[A-Za-z\\s-]+$/
-    const contentNombreyApellido = /\\b[A-Za-z]+\\b\\s+\\b[A-Za-z]+\\b/
     const valueSplit= value.split(" ");
-    
-    if(!contentSymbol.test(value)){
-        return "Ingresó un símbolo";
+    console.log("valueSplit: ", valueSplit);
+    for(let i=0; i<valueSplit.length; i++){
+        if(!contentSymbol.test(valueSplit[i]) && valueSplit[i] !== ""){
+            return "Ingresó un símbolo";
+        }
     }
-    else if(contentNombreyApellido.test(value)){
+    if(valueSplit.length<2 || valueSplit[1] == ""){
         return "Debe ingresar nombre y apellido";
+    }
+    else if( valueSplit.length>2 && valueSplit[valueSplit.length-1] == ""){
+        return "Ingresó un espacio al final"
     }
     return "";
 }

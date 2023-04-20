@@ -17,29 +17,48 @@ const Form = ({status, visibility})=>{
         name: "",
         email: "",
         asunto: "",
-        mensaje: ""
+        mensaje: "",
+        submit: false
     })
+
+    const checkErrors=(errors)=>{
+        let err = false;
+        let val= true;
+        for (const key in errors){
+            if(key!="submit" && errors[key] !== "") err = true
+        }
+        for (const key in values){
+            if(values[key] == "") val= false
+        }
+        return(
+            (!err && val) ? true : false
+        )
+    }
 
     const handlerOnChange=(id, newValue)=>{
         if(id==="inputName"){
             setValues({...values, name: newValue})
-            const error = validarName(newValue);
-            setErrors({...errors, name: error});
+            const newErrors = {...errors, name: validarName(newValue)};
+            const submit = checkErrors(newErrors);
+            setErrors({...newErrors, submit: submit});
         } 
         else if(id==="inputEmail"){
             setValues({...values, email: newValue})
-            const error = validarMail(newValue);
-            setErrors({...errors, email: error});
+            const newErrors = {...errors, email: validarMail(newValue)};
+            const submit = checkErrors(newErrors);
+            setErrors({...newErrors, submit: submit});
         }
         else if(id==="inputAsunto"){
             setValues({...values, asunto: newValue})
-            const error = validarAsunto(newValue);
-            setErrors({...errors, asunto: error});
+            const newErrors = {...errors, asunto: validarAsunto(newValue)};
+            const submit = checkErrors(newErrors);
+            setErrors({...newErrors, submit: submit});
         }
         else if(id==="inputMensaje"){
             setValues({...values, mensaje: newValue})
-            const error = validarMessage(newValue);
-            setErrors({...errors, mensaje: error});
+            const newErrors = {...errors, mensaje: validarMessage(newValue)};
+            const submit = checkErrors(newErrors);
+            setErrors({...newErrors, submit: submit});
         }
     }
 
@@ -53,7 +72,8 @@ const Form = ({status, visibility})=>{
     const handlerSubmit= async (event)=>{
         event.preventDefault();
         const response = await axios.post("https://portfolio-production-07fa.up.railway.app/send", values)
-        console.log(response.data)
+        setValues({name:"", email:"", asunto:"", mensaje:""})
+        setErrors({name:"", email:"", asunto:"", mensaje:"", submit: false})
     }
     return(
         <>
@@ -120,7 +140,7 @@ const Form = ({status, visibility})=>{
                             
                         </div>
                         <div className={styles.subContainer1_4}>
-                            <ButtonStyle content={"_Enviar_"}/>
+                            <ButtonStyle content={"_Enviar_"} status={errors.submit}/>
                         </div>
                     </form>
                 </div>
