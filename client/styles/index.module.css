@@ -57,6 +57,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     /* background-color: red; */
 }
 .myDescription1{
@@ -101,7 +102,7 @@
 .message{
     /* background-color: blueviolet; */
     width: 70%;
-    height: 35vh;
+    height: 218px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,19 +120,20 @@
 .text_h1{
     color: #ffffff;
     font-family: 'Oswald';
-    font-size: 15vh;
+    font-size: 93px;
 }
 .text_h3{
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
-    font-weight: 200 ;
-    font-size: 6.5vh;
+    font-weight: 200;
+    font-size: 40px;
 }
 .text_h4{
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
-    font-size: 6vh;
+    font-size: 37px;
+    /* font-size: 6vh; */
 }
 .text_h4min{
     color: #ffffff;
@@ -143,13 +145,13 @@
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
-    font-size: 3.5vh;
+    font-size: 21px;
 }
 .text_pmin{
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
-    font-size: 2.7vh;
+    font-size: 17px;
 }
 .noVisible{
     display: none;

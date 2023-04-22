@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 import styles from "../styles/navBar.module.css";
 
 const NavBar=({visibility})=>{
@@ -14,9 +14,10 @@ const NavBar=({visibility})=>{
                 <div className={styles.container1}>
                 </div>
                 <div className={styles.container2}>
-                    <button className={styles.button}>PORTAFOLIO</button>
-                    <button className={styles.button}>SOBRE_MI</button>
-                    <button className={styles.button}>TECNOLOGIAS</button>
+                    <Link className={styles.button} href="/">PRINCIPAL</Link>   
+                    <Link className={styles.button} href="/portfolio">PORTAFOLIO</Link>
+                    <Link className={styles.button} href="/about">SOBRE_MI</Link>
+                    <Link className={styles.button} href="technologies">TECNOLOGIAS</Link>
                 </div>
                 <div className={styles.container3}>
                     <div>

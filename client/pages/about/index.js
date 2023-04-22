@@ -1,17 +1,11 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
 import { useState } from 'react';
-import styles from '../styles/index.module.css';
-import NavBar from '../subComponents/navBar';
-import Form from '../subComponents/form';
-import About from '@/subComponents/myDescription';
-import FrontPage from '../subComponents/frontPage';
-import MyProjects from '@/subComponents/myProjects';
-import MyTechnologies from '@/subComponents/myTechnologies';
+import styles from '../../styles/index.module.css';
+import NavBar from '../../subComponents/navBar';
+import Form from '../../subComponents/form';
+import MyDescription from '@/subComponents/myDescription';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+export default function About() {
   
   const [visibles, setVisibles] = useState({
     myDescription: false,
@@ -30,13 +24,8 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar visibility={{setVisibles, visibles}}/>
         <Form status={visibles.form} visibility={{setVisibles, visibles}}/>
-        <FrontPage/>
-        <div className={visibles.form? styles.containerOff : styles.containerOn}>
-          <About visibility={{setVisibles, visibles}}/>
-          <div className={styles.linea}/>
-          <MyProjects/>
-          <div className={styles.linea}/>
-          <MyTechnologies/>
+        <div className={styles.containerOn}>
+          <MyDescription visibility={{setVisibles, visibles}} origin={"about"}/>
           <div className={styles.linea}/>
         </div>
       </main>

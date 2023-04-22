@@ -3,11 +3,12 @@ import styles from "../styles/index.module.css";
 import profilePict from '../public/images/profile_picture.png';
 import flecha from '../public/iconos/flecha_abajo.png';
 
-const About = ({visibility})=>{
-    const {setVisibles, visibles} = visibility;
+const MyDescription = ({visibility, origin})=>{  
+  const {setVisibles, visibles} = visibility;
     const handleVisibility=()=>{
         setVisibles({...visibles, myDescription: !visibles.myDescription})
     }
+  
     return(
         <>
             <div className={styles.linea}/>
@@ -33,15 +34,18 @@ const About = ({visibility})=>{
                   </p>
                 </div>
               </div>
+              {(origin !== "about") ? 
               <div className={ visibles.myDescription ? styles.noVisible : styles.desplegator} onClick={()=>handleVisibility()}>
                 <Image
                   src={flecha}
                   alt= "flecha hacia abajo"
                   width={45}
                 />
-              </div>
+              </div> :
+              <></>
+              }
               <div>
-                <div className={visibles.myDescription ? styles.myDescription2Visible : styles.noVisible }>
+                <div className={(visibles.myDescription || origin) ? styles.myDescription2Visible : styles.noVisible }>
                   <p className={styles.text_p}>
                     <br/>- ¿Cómo llegué a Full Stack Developer?<br/>
 
@@ -59,14 +63,17 @@ const About = ({visibility})=>{
                     de razonamiento lógico, algoritmia, y conocimiento de nuevas tecnologías. 
                     Buscando de esta forma poder lograr soluciones cada vez mejores y más eficientes a los problemas que se presentan. 
                   </p>
-                  <div className={ visibles.myDescription ? styles.desplegator: styles.noVisible } onClick={()=>handleVisibility()}>
-                      <Image
-                        src={flecha}
-                        alt= "flecha hacia arriba"
-                        width={45}
-                        className={styles.iconFlechaArriba}
-                      />
-                  </div>
+                  {(origin !== "about") ?
+                    <div className={ visibles.myDescription ? styles.desplegator: styles.noVisible } onClick={()=>handleVisibility()}>
+                        <Image
+                          src={flecha}
+                          alt= "flecha hacia arriba"
+                          width={45}
+                          className={styles.iconFlechaArriba}
+                        />
+                    </div> :
+                    <></>
+                  }
                 </div>
               </div>
             </div>
@@ -74,7 +81,7 @@ const About = ({visibility})=>{
     )
 }
 
-export default About;
+export default MyDescription;
 
 
 
