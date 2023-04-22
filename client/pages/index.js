@@ -1,27 +1,13 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import profilePict from '../public/images/profile_picture.png';
-import reactLogo from '../public/images/Logotipos/react.png';
-import reactColorLogo from '../public/images/Logotipos/reactColor.png';
-import jsLogo from '../public/images/Logotipos/js.png';
-import jsColorLogo from '../public/images/Logotipos/jsColor.png';
-import cssLogo from '../public/images/Logotipos/css.png';
-import cssColorLogo from '../public/images/Logotipos/cssColor.png';
-import html5Logo from '../public/images/Logotipos/html5.png';
-import html5ColorLogo from '../public/images/Logotipos/html5Color.png';
-import postgreSqlLogo from '../public/images/Logotipos/postgreSql.png';
-import postgreSqlColorLogo from '../public/images/Logotipos/postgreSqlColor.png';
-import nodeJsLogo from '../public/images/Logotipos/nodeJs.png';
-import nodeJsColorLogo from '../public/images/Logotipos/nodeJsColor.png';
-import flecha from '../public/iconos/flecha_abajo.png';
 import { useState } from 'react';
 import styles from '../styles/index.module.css';
-import ParticlesBackground from '../subComponents/particles/particlesBackground';
 import NavBar from '../subComponents/navBar';
-import Form from '../subComponents/form'
+import Form from '../subComponents/form';
+import About from '@/subComponents/about';
 import FrontPage from '../subComponents/frontPage';
-import ButtonStyle from '../subComponents/buttonStyle';
+import MyProjects from '@/subComponents/myProjects';
+import MyTechnologies from '@/subComponents/myTechnologies';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,18 +17,6 @@ export default function Home() {
     myDescription: false,
     form: false
   });
-  const [over, setOver] = useState({
-    overJs: false,
-    overReact: false,
-    overCss: false,
-    overHtml: false,
-    overPostgreSql: false,
-    overNodeJs: false
-  })
-
-  const handleVisibility=()=>{
-    setVisibles({...visibles, myDescription: !visibles.myDescription})
-  }
 
   return (
     <>
@@ -58,197 +32,13 @@ export default function Home() {
         <Form status={visibles.form} visibility={{setVisibles, visibles}}/>
         <FrontPage/>
         <div className={visibles.form? styles.containerOff : styles.containerOn}>
+          <About visibility={{setVisibles, visibles}}/>
           <div className={styles.linea}/>
-          <div className={styles.subcontainer3}>
-              <h3 className={styles.text_h4}>¿ Quien soy ?</h3>
-              <div className={styles.subcontainer3_1}>
-                <div className={styles.myPhoto}>
-                  <Image
-                    className={styles.profilePict}
-                    src={profilePict} 
-                    alt= "Picture of the author"
-                    width={200}
-                  />
-                </div>
-                <div className={styles.myDescription1}>
-                  <p className={styles.text_p}>
-                    Hola, mi nombre es Augusto Corbalán, soy de Alta Gracia - Córdoba, Argentina.<br/>
-
-                    <br/>Soy Full Stack web Developer, cuento con 800 horas de programación realizadas en el bootcamp 
-                    "Soy Henry" tanto en tareas y proyectos individuales como grupales. Estando capacitado para trabajar 
-                    con las tecnologías de JavaScript, React.js, Redux.js, Node.js, PostgreSQL, Sequelize.js, HTML, CSS, entre otras. 
-                    Tanto de forma individual como en equipo con la tecnología GIT.<br/>
-                  </p>
-                </div>
-              </div>
-              <div className={ visibles.myDescription ? styles.noVisible : styles.desplegator} onClick={()=>handleVisibility()}>
-                <Image
-                  src={flecha}
-                  alt= "flecha hacia abajo"
-                  width={45}
-                />
-              </div>
-              <div>
-                <div className={visibles.myDescription ? styles.myDescription2Visible : styles.noVisible }>
-                  <p className={styles.text_p}>
-                    <br/>- ¿Cómo llegué a Full Stack Developer?<br/>
-
-                    <br/>Inicié mi carrera como Desarrollador luego de descubrir en la carrera de Ingeniería la importancia de la programación 
-                    para la resolución de los problemas y búsqueda de las soluciones más eficientes para los problemas de la actualidad.<br/>
-
-                    Desde chico tuve un gran interés y habilidad para la resolución de problemas relacionados con tecnología, es por ello 
-                    que siempre dediqué mi tiempo y esfuerzo a buscar las herramientas que me permitan encontrar las soluciones más eficientes a estos.<br/>
-
-                    <br/>- ¿Por qué desarrollo WEB?<br/>
-
-                    <br/>Decidí comenzar en desarrollo web ya que considero que es la mejor forma de iniciar en el mundo de la programación y desarrollo de soluciones 
-                    por medio de software. 
-                    Actualmente sigo estudiando y capacitándome para profundizar cada vez más mis conocimientos en el desarrollo de software web, mejorar mi capacidad 
-                    de razonamiento lógico, algoritmia, y conocimiento de nuevas tecnologías. 
-                    Buscando de esta forma poder lograr soluciones cada vez mejores y más eficientes a los problemas que se presentan. 
-                  </p>
-                  <div className={ visibles.myDescription ? styles.desplegator: styles.noVisible } onClick={()=>handleVisibility()}>
-                      <Image
-                        src={flecha}
-                        alt= "flecha hacia arriba"
-                        width={45}
-                        className={styles.iconFlechaArriba}
-                      />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.linea}/>
-            <div className={styles.subcontainer4}>
-              <h3 className={styles.text_h3}>Mis proyectos</h3>
-              <p className={styles.text_p}> 
-                Te invito a conocer mis proyectos dando click a la "card", y a que luego me dejes tu feedback para seguir mejorando !!
-              </p>
-              <div className={styles.subcontainer4_1}>
-                  <div className={styles.containerProject} >
-                    <a href='https://pi-henry-2.vercel.app'>
-                      <div className={styles.containerProject1}>
-                        <div className={styles.project}>
-                          <div className={styles.nameProject}>
-                            <h4 className={styles.text_h4}>PI-FOOD</h4>
-                            <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
-                          </div>
-                          <div className={styles.descriptionProject}>
-                            <p className={styles.text_p}>Descripción:</p>
-                            <p className={styles.text_pmin}>
-                              "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
-                              junto con información relevante de las mismas utilizando la api externa "spoonacular" 
-                              y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
-                            </p>
-                            <p className={styles.text_p}>Tecnologías:</p>
-                            <p className={styles.text_pmin}>
-                              React | Redux | nodeJs | Sequelize | PostgreSQL
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <div className={styles.verticalLine}></div>
-                    <div className={styles.projectDetails}>
-                      <p className={styles.text_pmin}>Nombre: PI-FOOD </p><br/>
-                      <p className={styles.text_pmin}>Modalidad: Individual</p><br/>
-                      <p className={styles.text_pmin}>Tecnologías: React | Redux | nodeJs | Sequelize | PostgreSQL </p>
-                      <div className={styles.button}>
-                        <div><ButtonStyle content={"_Feedback_"}/></div>
-                      </div>                 
-                    </div>
-                  </div>
-              </div>
-              <div className={styles.subcontainer4_1}>
-              <div className={styles.containerProject} >
-                    <a href='https://front-end-six-black.vercel.app'>
-                      <div className={styles.containerProject2}>
-                        <div className={styles.project}>
-                          <div className={styles.descriptionProject}>
-                            <p className={styles.text_p}>Descripción:</p>
-                            <p className={styles.text_pmin}>
-                              Nace con la idea de crear un espacio amigable en el que los desarrolladores puedan distenderse,
-                              compartir ideas y proyectos propios.
-                              Resolver dudas, buscar compañeros para trabajar en equipo y buscar trabajo.
-                              Todo dentro de un mismo espacio
-                            </p>
-                            <p className={styles.text_p}>Tecnologías:</p>
-                            <p className={styles.text_pmin}>
-                              React | Redux | nodeJs | Sequelize | PostgreSQL | MaterialUI | Auth0              
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <div className={styles.verticalLine}></div>
-                    <div className={styles.projectDetails}>
-                      <p className={styles.text_pmin}>Nombre: codeCuak </p><br/>
-                      <p className={styles.text_pmin}>Modalidad: Grupal (8 programadores)</p><br/>
-                      <p className={styles.text_pmin}>Tecnologías: React | Redux | nodeJs | Sequelize | PostgreSQL | MaterialUI | Auth0 </p>
-                      <div className={styles.button}>
-                        <div><ButtonStyle content={"_Feedback_"}/></div>
-                      </div>
-                    </div>
-              </div>
-              </div>
-            </div>
-            <div className={styles.linea}/>
-            <div className={styles.subcontainer2}>
-              <h3 className={styles.text_h3}>Tecnologías</h3>
-              <div className={styles.logotypes}>
-                <Image
-                  className={styles.JavaScript}
-                  src={over.overJs? jsColorLogo : jsLogo}
-                  alt='JS Logo'
-                  width={120}
-                  onMouseOver={()=>setOver({...over, overJs: true})}
-                  onMouseOut={()=>setOver({...over, overJs: false})}
-                />
-                <Image
-                  className={styles.React}
-                  src={over.overReact? reactColorLogo : reactLogo}
-                  alt='React Logo'
-                  width={150}
-                  onMouseOver={()=>setOver({...over, overReact: true})}
-                  onMouseOut={()=>setOver({...over, overReact: false})}
-                />
-                <Image
-                  className={styles.Css}
-                  src={over.overCss? cssColorLogo : cssLogo}
-                  alt='Css Logo'
-                  width={120}
-                  onMouseOver={()=>setOver({...over, overCss: true})}
-                  onMouseOut={()=>setOver({...over, overCss: false})}
-                />
-                <Image
-                  className={styles.html5}
-                  src={over.overHtml? html5ColorLogo : html5Logo}
-                  alt='Html5 Logo'
-                  width={120}
-                  onMouseOver={()=>setOver({...over, overHtml: true})}
-                  onMouseOut={()=>setOver({...over, overHtml: false})}
-                />
-                <Image
-                  className={styles.postgreSql}
-                  src={over.overPostgreSql? postgreSqlColorLogo : postgreSqlLogo}
-                  alt='postgreSql Logo'
-                  width={120}
-                  onMouseOver={()=>setOver({...over, overPostgreSql: true})}
-                  onMouseOut={()=>setOver({...over, overPostgreSql: false})}
-                />
-                <Image
-                  className={styles.nodeJs}
-                  src={over.overNodeJs? nodeJsColorLogo : nodeJsLogo}
-                  alt='nodeJs Logo'
-                  width={120}
-                  onMouseOver={()=>setOver({...over, overNodeJs: true})}
-                  onMouseOut={()=>setOver({...over, overNodeJs: false})}
-                />
-              </div>
-            </div>
-            <div className={styles.linea}/>
-          </div>
-      
+          <MyProjects/>
+          <div className={styles.linea}/>
+          <MyTechnologies/>
+          <div className={styles.linea}/>
+        </div>
       </main>
     </>
   )
