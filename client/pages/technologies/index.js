@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Head from "next/head";
+import { Head } from "next/document";
 import styles from "../../styles/index.module.css"
 import MyTechnologies from "@/subComponents/myTechnologies";
 import NavBar from "@/subComponents/navBar";

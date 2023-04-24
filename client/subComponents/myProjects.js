@@ -19,16 +19,16 @@ const MyProjects = ()=>{
                             <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
                             </div>
                             <div className={styles.descriptionProject}>
-                            <p className={styles.text_p}>Descripción:</p>
-                            <p className={styles.text_pmin}>
-                                "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
-                                junto con información relevante de las mismas utilizando la api externa "spoonacular" 
-                                y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
-                            </p>
-                            <p className={styles.text_p}>Tecnologías:</p>
-                            <p className={styles.text_pmin}>
-                                React | Redux | nodeJs | Sequelize | PostgreSQL
-                            </p>
+                                <p className={styles.text_p}>Descripción:</p>
+                                <p className={styles.text_pmin}>
+                                    "RecipesHenry" es una aplicación en la cual se pueden ver distintas recetas de comida 
+                                    junto con información relevante de las mismas utilizando la api externa "spoonacular" 
+                                    y a partir de ella poder, entre otras cosas: Buscar, Filtrar y Ordenar resultados y Crear nuevas recetas
+                                </p>
+                                <p className={styles.text_p}>Tecnologías:</p>
+                                <p className={styles.text_pmin}>
+                                    React | Redux | nodeJs | Sequelize | PostgreSQL
+                                </p>
                             </div>
                         </div>
                         </div>

@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { Head } from 'next/document';
 import { useState } from 'react';
 import styles from '../../styles/index.module.css';
 import NavBar from '../../subComponents/navBar';

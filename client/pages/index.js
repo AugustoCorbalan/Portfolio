@@ -8,6 +8,7 @@ import About from '@/subComponents/myDescription';
 import FrontPage from '../subComponents/frontPage';
 import MyProjects from '@/subComponents/myProjects';
 import MyTechnologies from '@/subComponents/myTechnologies';
+import Foot_page from '@/subComponents/foot_page';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,7 +38,7 @@ export default function Home() {
           <MyProjects/>
           <div className={styles.linea}/>
           <MyTechnologies/>
-          <div className={styles.linea}/>
+          <Foot_page/>
         </div>
       </main>
     </>

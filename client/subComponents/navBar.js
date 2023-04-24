@@ -15,8 +15,8 @@ const NavBar=({visibility})=>{
                 </div>
                 <div className={styles.container2}>
                     <Link className={styles.button} href="/">PRINCIPAL</Link>   
-                    <Link className={styles.button} href="/portfolio">PORTAFOLIO</Link>
                     <Link className={styles.button} href="/about">SOBRE_MI</Link>
+                    <Link className={styles.button} href="/portfolio">PORTAFOLIO</Link>
                     <Link className={styles.button} href="technologies">TECNOLOGIAS</Link>
                 </div>
                 <div className={styles.container3}>
