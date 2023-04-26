@@ -42,8 +42,7 @@ const Foot_page=()=>{
                                 width={15}
                             />
                             <a className={styles.text_pmin} href="https://www.linkedin.com/in/augusto-corbalan-a6b857256">www.linkedin.com/in/augusto-corbalan</a>
-                        </div>
-                                    
+                        </div>                             
                     </div>
                 </div>
             </div>
