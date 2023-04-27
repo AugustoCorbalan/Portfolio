@@ -42,14 +42,14 @@
     left: 20em;
     width: 30em;
     height: 30em;
-    animation: orbit 36.5s linear infinite;
+    animation: orbitCenter 36.5s linear infinite;
 }
 .moon{
     top: 0;
     right: 0;
     width: 8em;
     height: 8em;
-    animation: orbit 2.7s linear infinite;
+    animation: orbitCenter 2.7s linear infinite;
 }
 
 .react::before, .moon::before{
@@ -93,34 +93,51 @@
     border-radius: 10%;
     z-index: 2;
 }
+.backendRotate{
+    position: absolute;
+    /* background-color: blueviolet; */
+    width: 45em;
+    height: 25em;
+    top: 7em;
+    left: 65em;
+}
+.reactOrbit{
+    position: absolute;
+    background-color:aquamarine;
+    width: 45em;
+    width: 445px;
+    height: 40em;
+    height: 400px;
+    top: 0.3em;
+    left: 65em;
+    z-index: 0;
+    animation: orbitOval 15s linear infinite;
+}
 .sequelize{
     /* background-color: red; */
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     border-style: solid;
     overflow: hidden;
-    /* border-color: white white white white; */
-    /* border-width: 0.1em 0 0 0; */
     border-radius: 50%;
     border: none;
-    top: 5em;
-    left:66em;
+    top: -2em;
+    left: 0.8em;
     width: 43em;
     height: 30em;
-    /* animation: orbit 36.5s linear infinite; */
+
 }
 .sequelize::before{
     content: "";
     position: absolute;
-    display: flex;
-    align-items: end;
-    right: 105px;
     background-image: linear-gradient(90deg, rgb(9,9,9), #ffffff );
     width: 50%;
-    height: 1000%;
-    animation: orbit 36.5s linear infinite;
+    height: 25em;
+    right: 0.8em;
+    bottom: 10em;
+    animation: orbitBottom 2.5s linear infinite;
 }
 .sequelize::after{
     content: "";
@@ -128,8 +145,9 @@
     background-color: rgb(9,9,9);
     border-radius: 50%;
     inset: 1.5px;
+    z-index: 1;
 }
-.moon{
+/* .moon{
     position: absolute;
     border-style: solid;
     border-color: white white white white;
@@ -142,28 +160,21 @@
     animation: orbit 2.7s linear infinite;
 }
 
-/* .sequelize::before, .moon::before{
+.moon::before{
     content: "";
     position: absolute;
     border-radius: 50%;
 }  */
 .sequelizeLogo{
+    /* background-color: red; */
     content: "";
-    position: absolute;
-    border-radius: 50%;
-    top: 2em;
-    right: 1.6em;
-    z-index: 2;
-    /* background-color: aqua; */
+    position: relative;
+    /* border-radius: 50%; */
+    top: 0em;
+    left: 20em;
+    z-index: 10;
+    background-color: aqua;
 }
-/* .moon::before{
-    top: 0.8em;
-    right: 0.2em;
-    width: 1.2em;
-    height: 1.2em;
-    background-color: silver;
-} */
-
 
 /* --------------------------------------------------------------------- */
 
@@ -210,8 +221,42 @@
     height: 1.2em;
     background-color: silver;
 } */
-@keyframes orbit {
+@keyframes orbitCenter {
     to {
         transform: rotate(360deg);
     }
 }
+@keyframes orbitBottom {
+    from {
+        transform: rotate(22deg);
+        transform-origin: center bottom;
+    }
+    to {
+        transform: rotate(382deg);
+        /* transform: rotate(22deg); */
+        transform-origin: center bottom;
+    }
+}
+
+@keyframes orbitOval{
+    0%{
+      transform: rotate(-90deg);
+      transform-origin: 222.5px 310px;  
+    }
+    50%{
+        transform: rotate(90deg);
+        /* transform-origin: 111.25px 200px;   */
+        transform-origin: 222.5px 310px;  
+    }
+    75%{
+        transform: rotate(270deg);
+        transform-origin: 222.5px 450px;  
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: 222.5px 450px;  
+    }
+}
+
+/* 445 w
+400 h */

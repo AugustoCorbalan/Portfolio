@@ -1,0 +1,126 @@
+.container{
+    /* background-color: aquamarine; */
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.MyTechnologies{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 60vh;
+    margin-top: 10vh;
+}
+
+.technology{
+    /* background-color: aquamarine; */
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin-top: 25px;
+}
+.nameTechnology{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    height: 50px;
+    padding-left: 10px;
+}
+.React{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/react.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.JavaScript{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-image: url('../public/images/Logotipos/js.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Redux{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/redux.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.NextJs{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/nextJs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.NodeJS{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/nodeJs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Express{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/express.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Sequelize{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/sequelize.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.PostgreSQL{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/postgreSql.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Html{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/html5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Css{
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/css.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
