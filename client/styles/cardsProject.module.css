@@ -1,0 +1,118 @@
+.container{
+    padding: 0 5px 0 5px;
+    border-radius: 2px;
+}
+.subcontainer4_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerProject{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 9, 9);
+    box-shadow: 4px 4px 5px rgba(23, 23, 23, 0.30);
+    border-radius: 2px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.containerProject1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 385px;
+    height: 259px;
+    background-image: url(../public/images/backgroundRecipes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+}
+.containerProject2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 385px;
+    height: 259px;
+    background-image: url(../public/images/backgroundcodeCuak.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.project{
+    background-color: #31313100;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.project:hover .descriptionProject{
+    background-color: #1a1a1ac8;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: translateY(0%);
+}
+.project:hover .descriptionProject p{
+    display: block;
+}
+.project:hover .nameProject{
+    display: none;
+}
+.nameProject{
+    margin-top: 85px;
+    margin-left: 145px;
+}
+.nameProject p{
+    text-indent: 80px;
+}
+.text_h4{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 ;
+    font-size: 37px;
+    /* font-size: 6vh; */
+}
+.text_p{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 ;
+    font-size: 21px;
+}
+.text_pmin{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 ;
+    font-size: 17px;
+}
+.descriptionProject{
+    display: none;
+    transform: translateY(-100%)
+}
+.projectDetails{
+    height: 239px;
+    width: 50%;
+    margin: 10px;
+    margin-left: 40px;
+    border-left: 2px solid #a4a4a4;
+    padding: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 100%;
+    height: 50%;
+}

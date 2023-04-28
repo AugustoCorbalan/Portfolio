@@ -34,6 +34,11 @@ const MyDescription = ({visibility, origin})=>{
                   </p>
                 </div>
               </div>
+              <div className={styles.question}>
+                  <p className={styles.text_p}>
+                    <br/>¿Cómo llegué a Full Stack Developer?
+                  </p>
+                </div>
               {(origin !== "about") ? 
               <div className={ visibles.myDescription ? styles.noVisible : styles.desplegator} onClick={()=>handleVisibility()}>
                 <Image
@@ -47,9 +52,7 @@ const MyDescription = ({visibility, origin})=>{
               <div>
                 <div className={(visibles.myDescription || origin) ? styles.myDescription2Visible : styles.noVisible }>
                   <p className={styles.text_p}>
-                    <br/>- ¿Cómo llegué a Full Stack Developer?<br/>
-
-                    <br/>Inicié mi carrera como Desarrollador luego de descubrir en la carrera de Ingeniería la importancia de la programación 
+                    Inicié mi carrera como Desarrollador luego de descubrir en la carrera de Ingeniería la importancia de la programación 
                     para la resolución de los problemas y búsqueda de las soluciones más eficientes para los problemas de la actualidad.<br/>
 
                     Desde chico tuve un gran interés y habilidad para la resolución de problemas relacionados con tecnología, es por ello 

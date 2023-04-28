@@ -1,39 +1,37 @@
 .container1{
     /* background-color: red; */
     display: flex;
-    height: 20vh;
+    justify-content: center;
+    height: 25vh;
     width: 100vw;
     border-top: 1.5px solid #a4a4a4;
     padding-top: 5px;
 }
 .subContainer1{
-    /* background-color:blueviolet; */
-    height: 100%;
-    width: 70%;
-}
-.subContainer2{
     /* background-color: aquamarine; */
     height: 100%;
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.subContainer2_1{
+.subContainer1_1{
     /* background-color: blueviolet; */
     display: flex;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     height: 20%;
     margin-top: 5px;
 }
-.subContainer2_2{
+.subContainer1_2{
     /* background-color: red; */
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
     height: 65%;
     padding-bottom: 11px;
+    margin-top: 10px;
 }
 .containerLink{
     display: flex;
@@ -47,7 +45,7 @@
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
-    font-size: 17px;
+    font-size: 21px;
     letter-spacing: 1px;
 }
 .text_p{
@@ -62,4 +60,40 @@
     font-weight: 200 ;
     font-size: 12px;
     letter-spacing: 1px;
+}
+.github{
+    width: 65px;
+    height: 65px;
+    background-image: url("../public/iconos/github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.github:hover{
+    background-image: url("../public/iconos/githubColor.png");
+}
+.gmail{
+    width: 65px;
+    height: 65px;
+    background-image: url("../public/iconos/gmail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.gmail:hover{
+    background-image: url("../public/iconos/gmailColor.png");
+}
+.ln{
+    width: 65px;
+    height: 65px;
+    background-image: url("../public/iconos/linkedin.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+.ln:hover{
+    background-color:rgb(0, 101, 153);
 }

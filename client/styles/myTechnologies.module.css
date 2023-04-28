@@ -124,3 +124,11 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.Material-UI{
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/images/Logotipos/materialUi.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

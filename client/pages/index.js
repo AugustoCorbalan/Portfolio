@@ -33,11 +33,17 @@ export default function Home() {
         <Form status={visibles.form} visibility={{setVisibles, visibles}}/>
         <FrontPage/>
         <div className={visibles.form? styles.containerOff : styles.containerOn}>
-          <About visibility={{setVisibles, visibles}}/>
+          <section id="about">
+            <About visibility={{setVisibles, visibles}}/>
+          </section>
           <div className={styles.linea}/>
-          <MyProjects/>
+          <section id="myProjects">
+            <MyProjects/>
+          </section>
           <div className={styles.linea}/>
-          <MyTechnologies/>
+          <section id="myTechnologies">
+            <MyTechnologies/>
+          </section>
           <Foot_page/>
         </div>
       </main>
