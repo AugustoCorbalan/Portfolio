@@ -46,6 +46,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 200 ;
     font-size: 21px;
+    font-size: 1.65vw;
     letter-spacing: 1px;
 }
 .text_p{
@@ -64,6 +65,8 @@
 .github{
     width: 65px;
     height: 65px;
+    width: 5vw;
+    height: 5vw;
     background-image: url("../public/iconos/github.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -76,6 +79,8 @@
 .gmail{
     width: 65px;
     height: 65px;
+    width: 5vw;
+    height: 5vw;
     background-image: url("../public/iconos/gmail.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -88,6 +93,8 @@
 .ln{
     width: 65px;
     height: 65px;
+    width: 5vw;
+    height: 5vw;
     background-image: url("../public/iconos/linkedin.png");
     background-size: 80%;
     background-repeat: no-repeat;

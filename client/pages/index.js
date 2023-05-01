@@ -37,7 +37,7 @@ export default function Home() {
             <About visibility={{setVisibles, visibles}}/>
           </section>
           <div className={styles.linea}/>
-          <section id="myProjects">
+          <section id="myProjects" className={styles.container}>
             <MyProjects/>
           </section>
           <div className={styles.linea}/>

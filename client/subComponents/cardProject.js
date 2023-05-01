@@ -11,8 +11,10 @@ const CardsProject = ()=>{
                             <div className={styles.containerProject1}>
                                 <div className={styles.project}>
                                     <div className={styles.nameProject}>
-                                        <h4 className={styles.text_h4}>PI-FOOD</h4>
-                                        <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
+                                        <div>
+                                            <h4 className={styles.text_h4}>PI-FOOD</h4>
+                                            <p className={styles.text_pmin}>  by AUGUSTO CORBALAN</p>
+                                        </div>
                                     </div>
                                     <div className={styles.descriptionProject}>
                                         <p className={styles.text_p}>Descripción:</p>
@@ -31,9 +33,11 @@ const CardsProject = ()=>{
                         </a>
                         <div className={styles.verticalLine}></div>
                         <div className={styles.projectDetails}>
-                            <p className={styles.text_pmin}>Nombre: PI-FOOD </p><br/>
-                            <p className={styles.text_pmin}>Modalidad: Individual</p><br/>
-                            <p className={styles.text_pmin}>Tecnologías: React | Redux | nodeJs | Sequelize | PostgreSQL </p>
+                            <div>
+                                <p className={styles.text_pmin}>Nombre: PI-FOOD </p><br/>
+                                <p className={styles.text_pmin}>Modalidad: Individual</p><br/>
+                                <p className={styles.text_pmin}>Tecnologías: React | Redux | nodeJs | Sequelize | PostgreSQL </p>
+                            </div>
                             <div className={styles.button}>
                                 <div><ButtonStyle content={"_Feedback_"}/></div>
                             </div>                 

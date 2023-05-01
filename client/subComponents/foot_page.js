@@ -36,7 +36,3 @@ const Foot_page=()=>{
 }
 
 export default Foot_page;
-
-// Datos de contacto: mail, telefono, github, linkedin
-// Boton de contacto
-// ¿Necesitas un desarrollador web? Construyamos algo!

@@ -1,7 +1,9 @@
 .navBar{
     background-color: rgb(9,9,9);
+    /* background-color: red; */
     width: 100%;
     height: 70px;
+    height: 5vw;
     display: flex;
     justify-content: center;
 }
@@ -12,6 +14,8 @@
     border-right: 1.5px solid #ffffffc4 ;
     margin-top: 18px;
     margin-bottom: 18px;
+    margin-top: 1.35%;
+    margin-top: 1.35%;
 
 }
 .container2{
@@ -30,12 +34,15 @@
     border-left: 1.5px solid #ffffffc4 ;
     margin-top: 18px;
     margin-bottom: 18px;
+    margin-top: 1.35%;
+    margin-top: 1.35%;
 }
 .container3 div{
     height: 50px;
 }
 .button{
     font-size: 18px;
+    font-size: 1.4vw;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-weight: 800;
@@ -89,13 +96,17 @@
     cursor: pointer;
     position: relative;
     padding: 7px;
+    padding: 0.52vw;
     margin-bottom: 20px;
+    margin-bottom: 1.5vw;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 18px;
+    font-size: 1.4vw;
     transition: all .15s ease;
+    /* background-color: red; */
   }
   
   .buttonContact::before,

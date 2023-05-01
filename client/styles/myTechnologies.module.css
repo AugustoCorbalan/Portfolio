@@ -20,9 +20,12 @@
 .technology{
     /* background-color: aquamarine; */
     width: 200px;
+    width: 15.5vw;
     height: 50px;
+    height: 3.9vw;
     display: flex;
     margin-top: 25px;
+    margin-top: 2.4vw;
 }
 .nameTechnology{
     /* background-color: red; */
@@ -30,13 +33,14 @@
     align-items: center;
     justify-content: flex-start;
     width: 150px;
-    height: 50px;
+    width: 12vw;
+    height: 3.9vw;
     padding-left: 10px;
 }
 .React{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/react.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -44,8 +48,8 @@
 }
 .JavaScript{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     border-radius: 5px;
     background-image: url('../public/images/Logotipos/js.png');
     background-size: contain;
@@ -54,8 +58,8 @@
 }
 .Redux{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/redux.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -63,8 +67,8 @@
 }
 .NextJs{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/nextJs.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -72,8 +76,8 @@
 }
 .NodeJS{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/nodeJs.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,8 +85,8 @@
 }
 .Express{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/express.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -90,8 +94,8 @@
 }
 .Sequelize{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/sequelize.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -99,8 +103,8 @@
 }
 .PostgreSQL{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/postgreSql.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -108,8 +112,8 @@
 }
 .Html{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/html5.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -117,16 +121,16 @@
 }
 .Css{
     /* background-color: red; */
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/css.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 .Material-UI{
-    width: 50px;
-    height: 50px;
+    width: 3.9vw;
+    height: 3.9vw;
     background-image: url('../public/images/Logotipos/materialUi.png');
     background-size: contain;
     background-repeat: no-repeat;
