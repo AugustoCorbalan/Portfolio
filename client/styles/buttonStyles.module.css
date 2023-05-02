@@ -139,10 +139,12 @@
   .buttonContact_textOn {
     position: relative;
     color: #ffffff;
+    font-size: 0.9vw;
   }
   .buttonContact_textOff {
     position: relative;
     color: #ffffff7a;
+    font-size: 0.9vw;
   }
 
   .buttonContactOn:hover {

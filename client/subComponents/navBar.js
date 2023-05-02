@@ -20,7 +20,7 @@ const NavBar=({visibility})=>{
                     <a className={styles.button} href="#myTechnologies">TECNOLOGIAS</a>
                 </div>
                 <div className={styles.container3}>
-                    <div>
+                    <div className={styles.subcontainer3_1}>
                         <button className={styles.buttonContact} onClick={handleClick}>
                             <span className={styles.buttonContact_lg}>
                                 <span className={styles.buttonContact_sl}></span>
