@@ -30,7 +30,12 @@ const MyDescription = ({visibility, origin})=>{
                     <br/>Soy Full Stack web Developer, cuento con 800 horas de programación realizadas en el bootcamp 
                     "Soy Henry" tanto en tareas y proyectos individuales como grupales. Estando capacitado para trabajar 
                     con las tecnologías de JavaScript, React.js, Redux.js, Node.js, PostgreSQL, Sequelize.js, HTML, CSS, entre otras. 
-                    Tanto de forma individual como en equipo con la tecnología GIT.<br/>
+                    Tanto de forma individual como en equipo con la tecnología GIT.
+                    Posteriormente realicé un upskilling en Henry en donde aprení y puse en práctica tecnología de microservicios, y bases de
+                    datos NoSql, utilizando las tecnologías MongoDb, Mongoose, Docker, Docker Compose, Google Cloud.
+                    Además realicé una pasantía profesional en Qali un emprendimiento de Perú, en donde tuve la oportunidad
+                    de poner en aprender y poner en práctica además de las tecnologías mencionadas anteriormente, Redux Toolkit, Tailwind Css,
+                    PrimeReact, Formik.<br/>
                   </p>
                 </div>
               </div>
