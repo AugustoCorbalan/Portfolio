@@ -3,7 +3,7 @@ import stylesText from "../styles/index.module.css";
 
 const MyTechnologies = ()=>{
     
-    const myTechnologies=["JavaScript", "React", "Redux","NextJs", "NodeJS", "Express", "Sequelize", "PostgreSQL", "Html", "Css", "Material-UI"]
+    const myTechnologies=["JavaScript", "React", "Redux","NextJs", "NodeJS", "Express", "Sequelize", "PostgreSQL", "Html", "Css", "Material-UI", "MongoDB", "Docker", "Google Cloud"]
 
     return(
         <>

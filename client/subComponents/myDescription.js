@@ -32,9 +32,9 @@ const MyDescription = ({visibility, origin})=>{
                     con las tecnologías de JavaScript, React.js, Redux.js, Node.js, PostgreSQL, Sequelize.js, HTML, CSS, entre otras. 
                     Tanto de forma individual como en equipo con la tecnología GIT.
                     Posteriormente realicé un upskilling en Henry en donde aprení y puse en práctica tecnología de microservicios, y bases de
-                    datos NoSql, utilizando las tecnologías MongoDb, Mongoose, Docker, Docker Compose, Google Cloud.
+                    datos NoSql, utilizando las tecnologías MongoDb, Mongoose, Docker, Docker Compose, Google Cloud.<br/>
                     Además realicé una pasantía profesional en Qali un emprendimiento de Perú, en donde tuve la oportunidad
-                    de poner en aprender y poner en práctica además de las tecnologías mencionadas anteriormente, Redux Toolkit, Tailwind Css,
+                    de aprender y poner en práctica además de las tecnologías mencionadas anteriormente, Redux Toolkit, Tailwind Css,
                     PrimeReact, Formik.<br/>
                   </p>
                 </div>

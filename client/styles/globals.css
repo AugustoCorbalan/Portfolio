@@ -1,8 +1,13 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  background-color: red;
+body::-webkit-scrollbar{
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
 }
  #tsparticles{
   width: 100%;

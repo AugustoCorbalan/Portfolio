@@ -136,3 +136,19 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.MongoDB{
+    width: 3.9vw;
+    height: 3.9vw;
+    background-image: url('../public/images/Logotipos/mongodb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Docker{
+    width: 3.9vw;
+    height: 3.9vw;
+    background-image: url('../public/images/Logotipos/docker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
